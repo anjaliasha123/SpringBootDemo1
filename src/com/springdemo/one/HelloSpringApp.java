@@ -12,8 +12,10 @@ public class HelloSpringApp {
 		Coach c1 = appContext.getBean("myCoach",Coach.class);
 		Coach c2 = appContext.getBean("bbCoach",Coach.class);
 		//call the method on bean
-		System.out.println(c1.getDailyWorkout());
-		System.out.println(c2.getDailyWorkout());
+//		System.out.println(c1.getDailyWorkout());
+//		System.out.println(c2.getDailyWorkout());
+		System.out.println(c1.getDailyFortune());
+		System.out.println(c2.getDailyFortune());
 		//close the context
 		appContext.close();
 
